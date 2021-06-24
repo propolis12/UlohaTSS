@@ -1,0 +1,17 @@
+#signInForm {
+    color: blue;
+}
+
+#mainContainer {
+    padding-top: 10% !important;
+
+}
+
+#aroundForm {
+    border-color: red;
+    border-style: dotted;
+    color: #0A2131;
+}
+
+
+/* only used for background overlay not needed for centering */
