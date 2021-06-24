@@ -56,7 +56,7 @@ if (!empty($_POST['username']) && !empty($_POST['password']) ) {
     try {
 
         $user = $queries->getUser($username);
-        if( sizeof($user) > 0 && $password === $user['password']) {
+        if( !empty($user) && sizeof($user) > 0 && $password === $user['password']) {
             unset($user['password']);
             //$_SESSION["username"] = $username;
             $roles = $queries->getRoles($user["id"]);
